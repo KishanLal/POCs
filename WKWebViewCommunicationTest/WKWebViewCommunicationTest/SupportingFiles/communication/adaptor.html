@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Adaptor</title>
+
+<script src="api/communication_layer.js"></script>
+
+<script language="javascript">
+    
+function loadContent()
+{
+ // load the content in the adjacent frame.
+    var scoURL = getQueryStringValue("sco_url")//getQueryParam("sco_url");
+    parent.frames.sco.document.location.href = unescape(scoURL);
+}
+
+</script>
+</head>
+
+<body bgcolor="#ffffff" onload="loadContent();">
+</body>
+</html>
